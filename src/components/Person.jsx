@@ -41,11 +41,25 @@ export default function Person({person, onDelete}) {
 	  text-align: start;
 		font-size: 12px;
   	color: #777;
+		margin-bottom: 10px;
 	`
 
 	const DeletePerson = styled.div`
-		background: red;
+		background-color: #ff6b6b;
 		cursor: pointer;
+		padding: 5px;
+		border-radius: 12px;
+		color: white;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #ff4b4b;
+		}
+
+		&:focus {
+			outline: none;
+		}
 	`
 
 	// const Arrow = styled.div`
